@@ -1,0 +1,163 @@
+body {
+    font-family: cursive;
+    background-color: #f4f7f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+ header {
+    background-color: #e3f2fd;
+    padding: 20px;
+    text-align: center;
+ }
+
+ img {
+    max-width: 100%;
+ }
+
+ nav ul {
+    list-style-type: none;
+    padding: 0;
+ }
+
+ nav li {
+    display: inline-block;
+    font-size: 18pt;
+    margin: 0px 40 px;
+ }
+
+ nav li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+ }
+
+ .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: none;
+ }
+
+ h1, h2 {
+    text-align: center;
+    color: #0277bd;
+ }
+
+ .main-header {
+    animation: move 3s infinite linear;
+ }
+
+ @keyframes move {
+    0% {
+        transform: translateX(-200px);
+    }
+    100% {
+        transform: translateX(200px);
+    }
+ }
+
+ .content {
+    flex-basis: 78%;
+    padding: 20px;
+    background-color: #ffffff;
+ }
+
+ .main-image {
+    width: 200px;
+    float: left;
+    margin-right: 50px;
+ }
+
+ .about {
+    font-size: 24pt;
+    float: left;
+    display: flex;
+ }
+
+ .hobbies {
+    margin-bottom: 50px;
+ }
+
+ .hobbies ul{
+    display: flex;
+ }
+
+ .hobbies li{
+    flex-grow: 1;
+    font-size: 18pt;
+ }
+
+ .item2 {
+    list-style-type: "\1F4D6";
+ }
+
+ .item1 {
+    list-style-type: "\1F4BB";
+ }
+
+ .item3 {
+    list-style-type: "\2708";
+ }
+
+ .item4 {
+    list-style-type: "\1F3C6";
+ }
+
+ table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+ }
+
+ th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+ }
+
+ th {
+    background-color: #0277bd;
+    color: #ffffff;
+ }
+
+ tr:nth-child(even) td {
+    background-color: #f2f2f2;
+ }
+
+ tr:nth-child(odd) td {
+    background-color: #ffffff; 
+ }
+
+ .rigth-column {
+    flex-basis: 15%;
+    padding: 20px;
+    background-color: #ffffff;
+    font-size: 14pt;
+ }
+
+ .rigth-column ul li {
+    list-style-type: "\1F44D";
+ }
+
+ .rigth-column h2, .rigth-column ul {
+    animation: fadeInOut 2s infinite ease-in-out;
+ }
+
+ @keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 1;
+    }
+ }
+
+ footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+ }
